@@ -1,0 +1,10 @@
+1|Robert Johnson|123-456-7890|robert@example.com
+2|Emma Wilson|234-567-8901|emma@example.com
+3|Daniel Brown|345-678-9012|daniel@example.com
+4|Olivia Lee|456-789-0123|olivia@example.com
+5|Sophia Garcia|567-890-1234|sophia@example.com
+6|James Martinez|678-901-2345|james@example.com
+7|Ava Davis|789-012-3456|ava@example.com
+8|William Rodriguez|890-123-4567|william@example.com
+9|Isabella Hernandez|901-234-5678|isabella@example.com
+10|Liam Smith|012-345-6789|liam@example.com

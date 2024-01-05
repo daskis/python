@@ -1,0 +1,10 @@
+1|Spaghetti|8.99|Italian pasta dish
+2|Sushi|12.49|Japanese rice and fish dish
+3|Burger|9.79|American classic beef burger
+4|Pad Thai|10.99|Thai stir-fried noodle dish
+5|Pizza|11.29|Italian oven-baked flatbread
+6|Taco|7.49|Mexican folded tortilla dish
+7|Salad|6.99|Healthy mix of vegetables
+8|Steak|15.89|Grilled beef steak
+9|Curry|12.79|Indian spiced dish
+10|Sushi Roll|9.99|Japanese rolled sushi dish

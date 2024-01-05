@@ -1,0 +1,10 @@
+1|Flour|1
+2|Rice|2
+3|Beef|3
+4|Chicken|4
+5|Lettuce|5
+6|Tomato|6
+7|Cheese|7
+8|Onion|8
+9|Pasta|9
+10|Fish|10

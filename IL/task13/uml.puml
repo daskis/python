@@ -1,0 +1,46 @@
+@startuml
+
+class Shape {
+    +x: int
+    +y: int
+    +square(): void
+    +perimeter(): void
+    +move(dx: int, dy: int): void
+    +fill(color: str): void
+    +compare(other: Shape): bool
+    +is_intersect(other: Shape): void
+    +is_include(other: Shape): void
+}
+
+class C1 {
+    +param1: int
+    +param2: int
+    +square(): void
+    +perimeter(): void
+    +additionalMethod1(): void
+    +additionalMethod2(): void
+}
+
+class C2 {
+    +param1: int
+    +square(): void
+    +perimeter(): void
+    +additionalMethod1(): void
+    +additionalMethod2(): void
+}
+
+class C3 {
+    +param1: int
+    +param2: int
+    +param3: int
+    +square(): void
+    +perimeter(): void
+    +additionalMethod1(): void
+    +additionalMethod2(): void
+}
+
+Shape <|-- C1
+Shape <|-- C2
+Shape <|-- C3
+
+@enduml

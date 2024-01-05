@@ -1,0 +1,10 @@
+1|ABC Foods|123-456-7890|info@abcfoods.com
+2|XYZ Suppliers|234-567-8901|contact@xyzsuppliers.com
+3|FreshMeat Inc.|345-678-9012|sales@freshmeat.com
+4|Golden Poultry|456-789-0123|golden@poultry.com
+5|FarmFresh Veggies|567-890-1234|farmfresh@veggies.com
+6|Dairy Delights|678-901-2345|support@dairydelights.com
+7|Baker's Paradise|789-012-3456|baker@paradise.com
+8|Gourmet Spices|890-123-4567|info@gourmetspices.com
+9|Pasta World|901-234-5678|sales@pastaworld.com
+10|Seafood Delicacies|012-345-6789|seafood@delicacies.com

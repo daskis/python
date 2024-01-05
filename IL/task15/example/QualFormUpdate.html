@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <title>Изменение || Qualification</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <div class="header row">
+          <nav class="navbar navbar-expand-lg container-fluid">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="http://localhost:8000"
+                >Администрирование БД "Автобаза"</a
+              >
+
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Qualification
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/QualForm/QualFormShow.html"
+                          >Посмотреть записи</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/QualForm/QualFormInsert.html"
+                          >Добавить запись</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/QualForm/QualFormUpdate.html"
+                          >Изменить запись</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Routes
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/RoutesForm/RoutesFormShow.html"
+                          >Посмотреть записи</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/RoutesForm/RoutesFormInsert.html"
+                          >Добавить запись</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/RoutesForm/RoutesFormUpdate.html"
+                          >Изменить запись</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Cars
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/CarsForm/CarsFormShow.html"
+                          >Посмотреть записи</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/CarsForm/CarsFormInsert.html"
+                          >Добавить запись</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item"
+                          href="http://localhost:8000/CarsForm/CarsFormUpdate.html"
+                          >Изменить запись</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <form
+        class="container h-100"
+        action="../cgi-bin/QualForm/UpdateQual.py"
+        method="post"
+      >
+        <div class="form-group">
+          <label>ID записи которую хотите изменить</label>
+          <input
+            type="text"
+            class="form-control"
+            name="ID_Field"
+            placeholder="Enter id"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Новый стаж вождения</label>
+          <input
+            type="text"
+            class="form-control"
+            name="Driving_Experience_Field"
+            placeholder="Enter driving experience"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label>Новый стаж в компании</label>
+          <input
+            type="text"
+            class="form-control"
+            name="Work_Experience_Field"
+            placeholder="Enter work experience"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-2">Изменить</button>
+      </form>
+    </main>
+    <footer class="py-3 my-4">
+      <div
+        class="footer-wrapper d-flex justify-content-center align-items-center"
+      >
+        <p class="text-center text-muted mb-0 font-size-increased mr-2">
+          © 2023 Emelyanenko A.A.
+        </p>
+        <a href="https://github.com/LumateDev">
+          <img
+            src="../src/git.svg"
+            alt="icon"
+            class="ml-2"
+            width="24"
+            height="24"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

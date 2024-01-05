@@ -1,0 +1,80 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #ececec;
+  font-family: "Microsoft Yahei";
+}
+main {
+  flex-grow: 1;
+}
+
+footer {
+  flex-shrink: 0;
+}
+
+.header .navbar {
+  display: flex;
+  justify-content: center;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #222831;
+  margin-bottom: 20px;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  color: #eeeeee;
+}
+
+.nav-link {
+  font-size: 24px;
+  color: #eeeeee;
+}
+.nav-link:hover,
+.nav-link:focus {
+  font-size: 24px;
+  color: #00adb5;
+}
+
+.navbar-brand:focus,
+.navbar-brand:hover {
+  color: #00adb5;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+  color: #6499e8;
+}
+.navbar-nav .nav-link.show {
+  color: #00adb5;
+}
+
+.font-size-increased {
+  font-size: 1.2em;
+}
+.mr-2 {
+  margin-right: 0.5rem;
+}
+.ml-2 {
+  margin-left: 0.5rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+table {
+  border-radius: 8px;
+  overflow: hidden; /* add this */
+}

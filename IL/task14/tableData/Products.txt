@@ -1,0 +1,10 @@
+1|Apple|1.99
+2|Banana|0.99
+3|Orange|2.49
+4|Grapes|3.99
+5|Pineapple|2.79
+6|Strawberry|4.29
+7|Watermelon|5.99
+8|Mango|2.89
+9|Peach|1.79
+10|Pear|1.49

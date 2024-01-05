@@ -1,0 +1,113 @@
+@startuml
+
+class CreatingTables {
+    -con: Connection
+    -cursor: Cursor
+    +__init__()
+    +creating_tables(): void
+}
+
+class InsertIntoTables {
+    -con: Connection
+    -cursor: Cursor
+    +__init__()
+    +insert_data_from_txt(file_path: str, table_name: str, columns: List[str]): void
+    +queries(): void
+}
+
+class Connection {
+    -con: sqlite3.Connection
+    -cursor: sqlite3.Cursor
+    +__init__()
+}
+
+CreatingTables *-- Connection
+InsertIntoTables *-- Connection
+
+class Products {
+    -product_id: int
+    -product_name: str
+    -price: float
+}
+
+class Dishes {
+    -dish_id: int
+    -dish_name: str
+    -description: str
+    -price: float
+}
+
+class Menu {
+    -menu_id: int
+    -dish_id: int
+}
+
+class Orders {
+    -order_id: int
+    -dish_id: int
+    -order_date: str
+}
+
+class Employees {
+    -employee_id: int
+    -employee_name: str
+    -position: str
+    -salary: float
+}
+
+class Customers {
+    -customer_id: int
+    -customer_name: str
+    -phone_number: str
+    -email: str
+}
+
+class Tables {
+    -table_id: int
+    -table_number: int
+    -capacity: int
+}
+
+class Reservations {
+    -reservation_id: int
+    -customer_id: int
+    -table_id: int
+    -reservation_date: str
+}
+
+class Ingredients {
+    -ingredient_id: int
+    -ingredient_name: str
+    -supplier_id: int
+}
+
+class Suppliers {
+    -supplier_id: int
+    -supplier_name: str
+    -contact_number: str
+    -email: str
+}
+
+CreatingTables *-- Products
+CreatingTables *-- Dishes
+CreatingTables *-- Menu
+CreatingTables *-- Orders
+CreatingTables *-- Employees
+CreatingTables *-- Customers
+CreatingTables *-- Tables
+CreatingTables *-- Reservations
+CreatingTables *-- Ingredients
+CreatingTables *-- Suppliers
+
+InsertIntoTables *-- Products
+InsertIntoTables *-- Dishes
+InsertIntoTables *-- Menu
+InsertIntoTables *-- Orders
+InsertIntoTables *-- Employees
+InsertIntoTables *-- Customers
+InsertIntoTables *-- Tables
+InsertIntoTables *-- Reservations
+InsertIntoTables *-- Ingredients
+InsertIntoTables *-- Suppliers
+
+@enduml

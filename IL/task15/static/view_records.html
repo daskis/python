@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выбор таблицы и просмотр записей</title>
+</head>
+<body>
+    <h1>Выбор таблицы и просмотр записей</h1>
+    <form action="/cgi-bin/view_table.py" method="post">
+        <label for="table">Выберите таблицу:</label>
+        <select name="table" id="table">
+            <option value="Products">Продукты</option>
+            <option value="Dishes">Блюда</option>
+            <option value="Menu">Меню</option>
+            <option value="Orders">Заказы</option>
+            <option value="Employees">Сотрудники</option>
+            <option value="Customers">Клиенты</option>
+            <option value="Tables">Столы</option>
+            <option value="Reservations">Бронирования</option>
+            <option value="Ingredients">Ингредиенты</option>
+            <option value="Suppliers">Поставщики</option>
+        </select>
+        <input type="submit" value="Показать данные">
+    </form>
+</body>
+</html>
